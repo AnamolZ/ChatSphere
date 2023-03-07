@@ -27,7 +27,7 @@ Install the required libraries.
 pip install -r requirements.txt
 ```
 Usage
-Start the server. (Only for testing, Server will be always after production)
+Start the server. (Only for testing, Server will be always open after production)
 ```bash
 python server.py
 ```

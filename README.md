@@ -13,7 +13,7 @@ To run this game, you need to have Python 3.x installed on your computer.
 Clone the repository.
 
 ```bash
-git clone https://github.com/<username>/two-way-player-programming-game.git
+git clone https://github.com/AnamolZ/CodeX.git
 ```
 
 Navigate to the project directory.

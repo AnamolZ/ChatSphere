@@ -1,6 +1,6 @@
 ## CodeX
 
-This is a two-player programming game where time complexity plays a vital role. The objective of the game is to solve a coding challenge given to the players and be the first one to complete it. The time complexity of the program task should also be considered, and the player with the highest score in both sections will be declared the winner.
+Programming game where time complexity plays a vital role. The objective of the game is to solve a coding challenge given to the players and be the first one to complete it. The time complexity of the program task should also be considered, and the player with the highest score in both sections will be declared the winner.
 
 The game is implemented using customtkinter and web sockets, where web sockets are used to connect two computers.
 

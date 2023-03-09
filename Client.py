@@ -1,12 +1,15 @@
 import asyncio
 import websockets
 
-async def send_message():
-    async with websockets.connect("ws://192.168.1.65:8765") as websocket:
-        message = input("You: ")
-        await websocket.send(message)
-        print(f"{message}")
+async def main():
+    while True:
+        try:
+            async with websockets.connect("ws://localhost:8765") as websocket:
+                message = input("You: ")
+                await websocket.send(message)
+                await websocket.close()
+                break
+        except:
+            pass
 
-asyncio.get_event_loop().run_until_complete(send_message())
-
-
+asyncio.run(main())

@@ -47,20 +47,19 @@ python client.py
 ```
 
 ## Class documentation
-      Client
-        A class representing a chat client.
-         ### Attributes
+
+    Attributes
             root (CTk): The main window of the client.
             entry (CTkEntry): The entry box for user input.
             display (tk.StringVar): The string variable to display messages.
             msg_display (CTkLabel): The label to display messages.
             Your_Name (str): The name of the client.
             history (list): A list of messages sent and received by the client.
-            
-         ### Methods
-            __init__(): Initializes the Client object and its attributes.
-            receive_message(client_socket): Receives messages from the server and updates the message display.
-            send_input(client_socket): Sends user input to the server.
-            Enter(event=None): Sends user input when the Enter key is pressed.
-            update_display(): Updates the message display with the latest messages.
-            run(): Runs the main event loop of the tkinter application.
+
+    Methods
+        __init__(): Initializes the Client object and its attributes.
+        receive_message(client_socket): Receives messages from the server and updates the message display.
+        send_input(client_socket): Sends user input to the server.
+        Enter(event=None): Sends user input when the Enter key is pressed.
+        update_display(): Updates the message display with the latest messages.
+        run(): Runs the main event loop of the tkinter application.

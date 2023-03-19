@@ -5,6 +5,7 @@
 Python GUI application built using the `customtkinter` library. It allows users to communicate with sockets on the same network. The first client application retrieves information from Server running in another computer using the `Sockets` libraries and displays it to second client.
 
 First Client
+
 ![C1](https://user-images.githubusercontent.com/97016425/226158472-1bf53789-57b5-4321-8917-1a546389e4fe.png)
 
 ## Table of Contents
@@ -34,12 +35,14 @@ Run server.py
 Client app.py.
 
 Second Client
+
 ![C2](https://user-images.githubusercontent.com/97016425/226158477-a4270ad7-3516-48b2-be8d-ec6819ab7865.png)
 
 3. Enter a message in the entry box and click the "Return".
 4. The server application will retrieve msg and send it to Client.
 
 Server
+
 ![S](https://user-images.githubusercontent.com/97016425/226158554-d82779ee-6954-4575-89b3-923e1da588cb.png)
 
 ## Contributing

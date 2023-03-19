@@ -1,12 +1,22 @@
-## CodeX
+## CodeX-Chat
 
-Programming game where time complexity plays a vital role. The objective of the game is to solve a coding challenge given to the players and be the first one to complete it. The time complexity of the program task should also be considered, and the player with the highest score in both sections will be declared the winner.
+### Requirements
+    tkinter library
+    customtkinter library (provided)
 
-The game is implemented using customtkinter and web sockets, where web sockets are used to connect two computers.
+### Usage
+    Run the Server.py script on the machine that will act as the server.
+    Run the Client.py script on the machine that will act as the client.
+    Enter your name when prompted in the client application.
+    The client window will appear. Type a message in the entry box and press Enter to send it to the server.
+    Messages from other clients connected to the server will be displayed in the message display.
 
-## Getting Started
-### Prerequisites
-To run this game, you need to have Python 3.x installed on your computer.
+### Features
+   User-friendly graphical user interface using tkinter.
+   Messages are displayed in a scrollable label.
+   The client stores a history of sent and received messages, which is limited to the last 8 messages.
+   The client sends messages to the server using a separate thread, allowing the user to continue interacting with the GUI while messages are being sent.
+   The client receives messages from the server using a separate thread, allowing the user to continue interacting with the GUI while messages are being received.
 
 ## Installation
 
@@ -36,18 +46,21 @@ Start two clients, one for each player.
 python client.py
 ```
 
-
-Follow the on-screen instructions to play the game.
-Game Rules
-The game will start once both players have connected to the server.
-The players will be given a coding challenge to solve.
-The first player to complete the challenge will be declared the winner of the first section.
-The time complexity of the player's program task will be calculated.
-The player with the lowest time complexity will be declared the winner of the second section.
-The player with the highest score in both sections will be declared the winner of the game.
-
-## Contributing
-If you want to contribute to this project, feel free to fork the repository and submit a pull request.
-
-## License
-This project is licensed under the MIT License. See the LICENSE file for more information.
+## Class documentation
+      Client
+        A class representing a chat client.
+         ### Attributes
+            root (CTk): The main window of the client.
+            entry (CTkEntry): The entry box for user input.
+            display (tk.StringVar): The string variable to display messages.
+            msg_display (CTkLabel): The label to display messages.
+            Your_Name (str): The name of the client.
+            history (list): A list of messages sent and received by the client.
+            
+         ### Methods
+            __init__(): Initializes the Client object and its attributes.
+            receive_message(client_socket): Receives messages from the server and updates the message display.
+            send_input(client_socket): Sends user input to the server.
+            Enter(event=None): Sends user input when the Enter key is pressed.
+            update_display(): Updates the message display with the latest messages.
+            run(): Runs the main event loop of the tkinter application.

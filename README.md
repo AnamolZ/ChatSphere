@@ -1,65 +1,60 @@
-## CodeX-Chat
+# CodeX
 
-### Requirements
-    tkinter library
-    customtkinter library (provided)
+## Project Description
 
-### Usage
-    Run the Server.py script on the machine that will act as the server.
-    Run the Client.py script on the machine that will act as the client.
-    Enter your name when prompted in the client application.
-    The client window will appear. Type a message in the entry box and press Enter to send it to the server.
-    Messages from other clients connected to the server will be displayed in the message display.
+Python GUI application built using the `customtkinter` library. It allows users to communicate with sockets on the same network. The first client application retrieves information from Server running in another computer using the `Sockets` libraries and displays it to second client.
 
-### Features
-   User-friendly graphical user interface using tkinter.
-   Messages are displayed in a scrollable label.
-   The client stores a history of sent and received messages, which is limited to the last 8 messages.
-   The client sends messages to the server using a separate thread, allowing the user to continue interacting with the GUI while messages are being sent.
-   The client receives messages from the server using a separate thread, allowing the user to continue interacting with the GUI while messages are being received.
+## Table of Contents
+
+- Installation
+- Usage
+- Contributing
+- Credits
+- License
 
 ## Installation
 
-Clone the repository.
-
-```bash
-git clone https://github.com/AnamolZ/CodeX.git
+1. Clone the repository to your local machine.
 ```
-
-Navigate to the project directory.
-
-```bash
-cd codex
+https://github.com/AnamolZ/CodeX.git
 ```
-Install the required libraries.
-
-```bash
-pip install -r requirements.txt
+2. Make sure you have Python 3 installed on your machine.
+3. Install the required libraries using the following command:
 ```
-Usage
-Start the server. (Only for testing, Server will be always open after production)
-```bash
-python server.py
+pip install requests tkinter customtkinter
 ```
-Start two clients, one for each player.
-```bash
-python client.py
-```
+## Usage
 
-## Class documentation
+1. Open the terminal and navigate to the directory where the project is located.
+2. Run the following command to start the application:
+Run server.py
+Client app.py.
 
-    Attributes
-            root (CTk): The main window of the client.
-            entry (CTkEntry): The entry box for user input.
-            display (tk.StringVar): The string variable to display messages.
-            msg_display (CTkLabel): The label to display messages.
-            Your_Name (str): The name of the client.
-            history (list): A list of messages sent and received by the client.
+3. Enter a message in the entry box and click the "Return".
+4. The server application will retrieve msg and send it to Client.
 
-    Methods
-        __init__(): Initializes the Client object and its attributes.
-        receive_message(client_socket): Receives messages from the server and updates the message display.
-        send_input(client_socket): Sends user input to the server.
-        Enter(event=None): Sends user input when the Enter key is pressed.
-        update_display(): Updates the message display with the latest messages.
-        run(): Runs the main event loop of the tkinter application.
+## Contributing
+
+If you want to contribute to this project, please follow the steps below:
+
+1. Fork the repository.
+2. Create a new branch with your feature or bug fix.
+3. Make your changes and commit them.
+4. Push your changes to your forked repository.
+5. Submit a pull request to the main repository.
+
+If you need to get more info about CustomTkinter Go through the **Documentation** provided below,
+
+## Documentation
+
+The **official** documentation for CustomTkinter can be found in the Wiki Tab here:
+
+**--> [Documentation](https://github.com/TomSchimansky/CustomTkinter/wiki)**.
+
+## Credits
+
+This project was created by AnamolZ.
+
+## License
+
+This project is licensed under the MIT License.

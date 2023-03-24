@@ -1,4 +1,4 @@
-# CodeX
+# ChatSphere
 
 ## Project Description
 
@@ -20,7 +20,7 @@ Python GUI application built using the `customtkinter` library. It allows users 
 
 1. Clone the repository to your local machine.
 ```
-https://github.com/AnamolZ/CodeX.git
+https://github.com/AnamolZ/ChatSphere.git
 ```
 2. Make sure you have Python 3 installed on your machine.
 3. Install the required libraries using the following command:
